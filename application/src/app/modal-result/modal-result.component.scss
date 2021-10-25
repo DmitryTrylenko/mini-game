@@ -1,0 +1,35 @@
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.534);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20%;
+    min-width: 270px;
+    height: 13%;
+
+    .game-result {
+        display: flex;
+        
+        .winner {
+            padding-left: 10px;
+            color: green;
+        }
+    }
+}
+  
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 13px;
+    font-weight: bold;
+    border: none;
+}

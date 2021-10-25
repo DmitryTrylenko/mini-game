@@ -1,0 +1,20 @@
+.cell {
+    width: 100px;
+    height: 100px;
+    max-width: 50px;
+    max-height: 50px;
+    margin: 3px;
+    background-color: blue;
+    
+    &.red {
+        background-color: red;
+    }
+    
+    &.green {
+        background-color: rgb(0, 190, 0);
+    }
+
+    &.yellow {
+        background-color: yellow;
+    }
+}

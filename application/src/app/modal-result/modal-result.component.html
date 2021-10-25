@@ -1,0 +1,9 @@
+<div class="modal">
+    <div class="modal-content">
+      <button class="close" (click)="closeModal.emit()">&times;</button>
+      <div class="game-result">
+        <p>WINNER:<p class="winner">{{service.gameWinner}}<p></p>
+      </div>
+      <app-score></app-score>
+    </div>
+</div>

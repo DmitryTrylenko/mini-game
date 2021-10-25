@@ -1,0 +1,23 @@
+<div class="main">
+    <div class="field">
+        <div *ngFor="let xRow of service.field; let x = index" class="x_row">
+            <app-cell [x]="x" [y]="y" [yRow]="yRow" *ngFor="let yRow of xRow; let y = index"></app-cell>
+        </div>
+    </div>
+
+    <div class="score">
+        <app-score></app-score>
+    </div>
+
+    <div class="input-time">
+        <input type="number"
+               class="type-value"
+               [(ngModel)]="time">
+
+        <button class="start-game"
+                [disabled]="!time"
+                (click)="startGame()">Start</button>
+    </div>
+</div>
+
+<app-modal-result *ngIf="openModal" (closeModal)="closeModal()"></app-modal-result>

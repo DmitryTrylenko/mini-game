@@ -1,0 +1,6 @@
+<div class="cell"
+    (click)="onCellClick(x, y)"
+    [class.red]="yRow === PLAYERS.COMPUTER"
+    [class.green]="yRow === PLAYERS.PLAYER"
+    [class.yellow]="service.coords && service.coords.x === x && service.coords.y === y">
+</div>
